@@ -1,0 +1,696 @@
+/* CSS Document */
+
+/**Resets************************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*
+Colors:
+black: #071013;
+red: #fb3640;
+dark blue: #0b4f6c;
+bright blue: #23b5d3;
+light blue: #f7ffff;
+*/
+* {
+	box-sizing:border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'nunito', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**Footer at bottom fix**/
+
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+
+#wrapper {
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+/**Styling Begins**/
+
+#background {
+	background: #23b5d3;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 200px;
+}
+
+#wrapper {
+	background: #e2f4fc;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, div, span {
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	font-size: 18px;
+}
+
+h4 {
+	color: #23b5d3;
+	font-size: 25px;
+	letter-spacing: 0.1em;
+	padding-bottom: 5px;
+	padding-top: 15px;
+	padding-left: 20px;
+	position: relative;
+	cursor: hand;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.unwordsList h4 {
+	padding-left: 0;
+}
+
+h3 {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	padding: 30px 0 0;
+}
+
+h2 {
+	color: #0b4f6c;
+	text-align: center;
+	padding: 30px 10px;
+}
+
+h5 {
+	color: #fb3640;
+	text-align: center;
+	background: white;
+	width: 760px;
+	margin: 0 auto;
+	padding: 35px 50px 0;
+}
+
+h2, h5 {
+	position: relative;
+	z-index: 3;
+}
+
+header {
+	text-align: center;
+	background: #23b5d3;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+a#title {
+	font-size: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+a#title:hover, a#title:visited, a#title:active {
+	color: white;
+	text-decoration: none;
+}
+
+#formHolder {
+	background: white;
+	width: 760px;
+	margin: 0 auto;
+	padding: 0 20px 35px;
+	z-index: 2;
+	position: relative;
+}
+
+.row {
+	clear: both;
+}
+
+.loneRow {
+	padding-bottom: 50px;
+}
+
+.inputRow {
+	margin-bottom: 50px;
+}
+
+.rowLeft {
+	padding-bottom: 10px;
+	padding-right: 10px;
+	text-align: right;
+	float: left;
+	width: 50%;
+}
+
+.rowRight {
+	padding-bottom: 10px;
+	padding-left: 20px;
+	text-align: left;
+	float: left;
+	width: 50%;
+}
+
+#inputHolder {
+	text-align: cetnter;
+}
+
+.inputDiv {
+	display: inline-block;
+	margin: 0 5px 10px;
+	text-align: center;
+}
+
+#longSearchRow {
+	padding-top: 30px;
+}
+
+label {
+	color: #0b4f6c;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.symbolSpan {
+	float:left;
+	width: 30px; height: 30px;
+	text-align: center;
+	cursor: hand;
+	cursor: pointer;
+	-webkit-user-select: none;         
+	-moz-user-select: none; 
+	-ms-user-select: none; 
+	-o-user-select: none;
+	user-select: none;
+}
+
+.symbolSpan div {
+	font-size: 40px;
+	margin-top: -9px;
+	margin-left: 2px;
+}
+
+.symbolSpan:hover circle {
+	fill: #23b5d3;
+}
+
+.symbolSpan:hover path {
+	fill: white;
+}
+
+input[type="text"] {
+	font-family: 'Nunito', sans-serif;
+	border: 3px solid #0b4f6c;
+	padding: 2px 5px;
+	text-align: center;
+	width: 180px;
+	font-size: 18px;
+	color: #0b4f6c;
+}
+
+input[type="text"]:focus {
+	border: 3px solid #23b5d3;
+	outline: none;
+}
+
+#numHolder {
+	float: left;
+	margin: -5px 10px 0;
+}
+
+#num_words {
+	width: 30px;
+	border: 3px solid #23b5d3;
+	font-size: 16px;
+	height: 30px;
+	padding: 3px;
+}
+
+#inputHolder {
+	text-align: center;
+}
+
+#inputDisplayHolder {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#displaysHolder {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.displayHolder {
+	padding-top: 2px;
+	display: inline-block;
+	margin: 0px 10px 10px;
+}
+
+.letterDiv {
+	display: inline-block;
+	padding: 6px 5px;
+	margin: 0px;
+	border-top: 3px solid #23b5d3;
+	border-left: 3px solid #23b5d3;
+	border-bottom: 3px solid #23b5d3;
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.letterDiv:last-child {
+	border-right: 3px solid #23b5d3;
+	width: 37px;
+}
+
+.checkboxHolder {
+	width: 25px;
+	margin: 0px;
+	position: relative;
+}
+
+.checkboxHolder label {
+	cursor: hand;
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border: 2px solid #23b5d3;
+}
+
+.checkboxHolder label:after {
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 8px;
+	background: transparent;
+	top: -4px;
+	left: 0px;
+	border: 5px solid #0b4f6c;
+	border-radius: 5px;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+
+.checkboxHolder label:hover::after {
+	opacity: 0.5;
+}
+
+.checkboxHolder input[type=checkbox]:checked + label:after {
+	opacity: 1;
+}
+
+#submitHolder {
+	text-align: center;
+	padding-top: 20px;
+}
+
+#submit {
+	background: #0b4f6c;
+	color: white;
+	padding: 5px 30px 5px;
+	line-height: 15px;
+	height: 30px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-family: 'nunito', 'sans-serif';
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	vertical-align: baseline;
+}
+
+#submit:hover {
+	background: #23b5d3;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#submitHolder {
+	text-align: center;
+}
+
+#resultsHolder {
+	width: 760px;
+	margin: 0 auto;
+	padding: 0px 0px 35px;
+	z-index: 2;
+	position: relative;
+	color: #0b4f6c;
+}
+
+.paddingFixActive {
+	padding-left: 25px;
+	display: inherit;
+}
+
+.paddingFixInactive {
+	padding-left: 25px;
+	display: none;
+}
+
+.wordsList {
+	list-style: none;
+	color: #23b5d3;
+	font-size: 25px;
+	padding-left: 30px;
+}
+
+.arrowInactive {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	border: 3px solid #0b4f6c;
+	border-bottom-left-radius: 1px;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(+225deg);
+	position: absolute;
+	top: 23px;
+	left: -10px;
+	margin-left: 5px;
+	cursor: hand;
+	cursor: pointer;
+	-webkit-transition: transform 2s;
+	transition: transform 2s;
+}
+
+.arrowActive {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	border: 3px solid #0b4f6c;
+	border-bottom-left-radius: 1px;
+	border-top: 0;
+	border-right: 0;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 23px;
+	left: -10px;
+	margin-left: 5px;
+	cursor: hand;
+	cursor: pointer;
+	-webkit-transition: transform 2s;
+	transition: transform 2s;
+}
+
+.pOS {
+	font-size: 20px;
+}
+
+.definitionList {
+	color: #0b4f6c;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	padding-top: 3px;
+}
+
+.definitions {
+	list-style:decimal;
+	padding-left: 45px;
+}
+
+.definitionItem {
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	line-height: 1.15em;
+	padding-top: 5px;
+}
+
+.unwordsList {
+	list-style: outside;
+	color: #23b5d3;
+	font-size: 25px;
+	margin-left: 51px;
+}
+
+.undefinitionList {
+	color: #0b4f6c;
+	font-size: 20px;
+	letter-spacing: 0.1em;
+	padding-top: 3px;
+	padding-bottom: 0px;
+}
+
+.unwordsList a, .unwordsList a:visited, .unwodsList a:active {
+	text-decoration: none;
+	padding-left: none;
+}
+
+.unwordsList:hover a {
+	text-decoration: none;
+}
+
+.googleSearch {
+	opacity: 0; 
+	padding-left: 10px;
+	color: #0b4f6c;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.unwordsList:hover .googleSearch {
+	opacity: 1;
+}
+
+/* Firefox text fixes */
+
+input::-moz-focus-inner, label::-moz-focus-inner {
+	border:0;
+	padding: 0;
+	margin-top: -10px;
+	margin-bottom: -1px;
+}
+
+@-moz-document url-prefix() {
+	
+	header {
+		padding-top: 0px;
+	}
+	#numHolder {
+		margin: -3px 10px 0;
+	}
+	
+	.symbolSpan div {
+		margin-top: -14px;
+	}
+	
+	#num_words {
+		padding: 0;
+		height: 35px;
+		width: 35px;
+	}
+	
+	input[type="text"] {
+		padding: 0px 5px 5px;
+		height: 35px;
+	}
+	
+	.letterDiv {
+		padding-top: 0;
+	}
+	
+	.checkboxHolder label {
+		top: 5px;
+	}
+	
+	.arrowInactive {
+		top: 30px;
+	}
+	
+	.arrowActive {
+		top: 30px;
+	}
+	
+	.cc-link {
+		text-decoration: none !important;
+		color: #0b4f6c !important;
+	}
+}
+
+@media screen and (max-width:760px) {
+	
+	#formHolder {
+		margin: 0;
+		width: 100%;
+		padding: 0 10px 25px;
+	}
+	
+	h5 {
+		width: 100%;
+	}
+	
+	#resultsHolder {
+		width: 100%;
+		padding-left: 8px;
+		padding-right: 5px;
+	}
+	
+	.wordsList {
+		padding-left: 16px;
+		font-size: 18px;
+	}
+	
+	.unwordsList {
+		font-size: 18px;
+		margin-left: 30px;
+	}
+	
+	h4 {
+		font-size: 20px;
+		padding-left: 10px;
+		padding-bottom: 0;
+		padding-top: 10px;
+	}
+	
+	.arrowInactive {
+		width: 8px;
+		height: 8px;
+		top: 18px;
+		left: -13px;
+	}
+	
+	.arrowActive {
+		width: 8px;
+		height: 8px;
+		top: 18px;
+		left: -13px;
+	}
+	
+	.definitionList {
+		font-size: 16px;
+	}
+	
+	.pOS {
+		font-size: 18px;
+	}
+	
+	.definitionItem {
+		font-size: 16px;
+	}
+	
+	.paddingFixActive {
+		padding-left: 16px;
+	}
+	
+	.paddingFixInactive {
+		padding-left: 16px;
+	}
+	
+	.definitions {
+		padding-left: 30px;
+	}
+	
+	.googleSearch {
+		opacity: 1;
+	}
+	
+	@-moz-document url-prefix() {
+		.arrowInactive {
+			top: 22px;
+			left: -13px;
+		}
+		
+		.arrowActive {
+			top: 22px;
+			left: -13px;
+		}
+		
+		.unwordsList {
+			margin-left: 27px;
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	h2, h5 {
+		font-size: 16px;
+		letter-spacing: 0em;
+	}
+	
+	label {
+		font-size: 16px;
+		letter-spacing: 0;
+	}
+	
+	#numHolder {
+		font-size: 16px;
+	}
+	
+	.rowLeft {
+		padding-right: 5px;
+	}
+	
+	.rowRight {
+		padding-left: 5px;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+	a#title {
+		font-size: 30px;
+	}
+	
+	
+	
+}
+

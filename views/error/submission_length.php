@@ -1,0 +1,1 @@
+<h5>blank submission<?php if ($_POST['num_words'] > 1) { ?>, please make sure all words contain letters or spaces<?php } ?></h5>

@@ -1,0 +1,14 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	 width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+
+<circle cx="15" cy="15" r="15" fill="white" />
+
+<path fill="#23b5d3" d="M22.47,15c0,0.47-0.37,0.84-0.84,0.84h-5.79v5.79c0,0.47-0.37,0.84-0.84,0.84s-0.84-0.37-0.84-0.84v-5.79
+
+	H8.37c-0.47,0-0.84-0.37-0.84-0.84s0.37-0.84,0.84-0.84h5.79V8.37c0-0.47,0.37-0.84,0.84-0.84s0.84,0.37,0.84,0.84v5.79h5.79
+
+	C22.1,14.16,22.47,14.53,22.47,15z"/>
+
+</svg>
+
