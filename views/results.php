@@ -14,7 +14,7 @@ $undefineds = $fullResults[1];
 			<?php 
 
 				echo count($defineds) . ' defined match';
-				if (count($defineds) != 1) { echo 'es' };
+				if (count($defineds) != 1) { echo 'es'; };
 				echo ':'; 
 			
 			?>
